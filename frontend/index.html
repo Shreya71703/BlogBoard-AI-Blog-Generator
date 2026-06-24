@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogBoard | AI Tech Blog</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BlogBoard</span>
+                <span class="logo-dot"></span>
+            </div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Deep-Dive Technical Insights</h1>
+            <p>Fully automated blogging platform powered by LangGraph and Groq. Zero fluff, production-grade articles on Machine Learning and AI.</p>
+        </section>
+
+        <section class="content-area">
+            <!-- Sidebar for Post List -->
+            <aside class="sidebar">
+                <h2>Latest Posts</h2>
+                <div id="post-list" class="post-list">
+                    <!-- Posts will be loaded here dynamically -->
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </aside>
+
+            <!-- Main Post Content -->
+            <article id="post-content" class="post-content">
+                <div class="empty-state">
+                    <div class="icon">📝</div>
+                    <h3>Select an article</h3>
+                    <p>Choose an article from the sidebar to start reading.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BlogBoard. Powered by AI.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
