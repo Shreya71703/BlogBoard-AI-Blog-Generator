@@ -115,7 +115,6 @@ Serve the website locally and open it:
 ```bash
 python -m http.server 8000 --directory frontend
 ```
-Navigate to **`http://localhost:8000`** in your browser.
 
 ---
 
