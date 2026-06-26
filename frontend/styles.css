@@ -314,3 +314,98 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+/* Search & Filters */
+.search-container {
+    margin-bottom: 1rem;
+}
+
+#search-input {
+    width: 100%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: var(--accent-primary);
+}
+
+.tag-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag-pill {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tag-pill:hover, .tag-pill.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: #fff;
+}
+
+/* Post Metadata inside Card */
+.post-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+}
+
+.post-tag {
+    font-size: 0.7rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: #a5b4fc;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+/* Header Article Tags */
+.markdown-body .article-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.markdown-body .meta-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.markdown-body .meta-tag {
+    font-size: 0.75rem;
+    background: rgba(99, 102, 241, 0.15);
+    color: #c7d2fe;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+}
+
